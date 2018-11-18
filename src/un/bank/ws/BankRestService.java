@@ -38,7 +38,7 @@ public class BankRestService {
 
 	@GET
 	@Path("/accounts")
-	@Produces(MediaType.APPLICATION_JSON)
+	@Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
 	public List<Account> listAccounts() {
 		return business.listAccounts();
 	}
